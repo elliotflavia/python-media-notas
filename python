@@ -1,0 +1,27 @@
+def calcular_media(nota1, nota2, nota3):
+    return (nota1 + nota2 + nota3) / 3
+
+def verificar_aprovacao(media):
+    if media >= 7.0:
+        return "Parabéns! Você foi aprovado."
+    else:
+        return "Infelizmente, você foi reprovado. Estude mais!"
+
+def main():
+    # Solicita ao usuário que insira as notas
+    nota1 = float(input("Digite a primeira nota: "))
+    nota2 = float(input("Digite a segunda nota: "))
+    nota3 = float(input("Digite a terceira nota: "))
+
+    # Calcula a média
+    media = calcular_media(nota1, nota2, nota3)
+
+    # Exibe a média
+    print(f"A média das notas é: {media}")
+
+    # Verifica a aprovação
+    resultado = verificar_aprovacao(media)
+    print(resultado)
+
+if __name__ == "__main__":
+    main()
